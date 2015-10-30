@@ -1,0 +1,31 @@
+﻿{
+	"name" : "元素模糊插件",
+	"description" : "为网页元素添加滤镜效果,Author:CharyWong",
+	"manifest_version" : 2,
+	"version" : "1.0",
+	"browser_action" : {
+		"default_icon" : "icons/icon48.png",
+		"default_popup" : "options.html",
+		"default_title" : "元素打码器"
+	},
+	"icons" : {
+		"16" : "icons/icon16.png",
+		"48" : "icons/icon48.png",
+		"128" : "icons/icon128.png"
+	},
+	"content_scripts" : [{
+			"matches" : ["http://*/*", "https://*/*"],
+			"js" : ["jquery-1.7.1.js", "cscript.js"]
+		}
+	],
+	/**extension options page*/
+	"options_page" : "options.html",
+
+	/**background scripts run in extensions*/
+	"background" : {
+		"scripts" : ["myscript.js"]
+	},
+
+	/*允许右键菜单*/
+	"permissions" : ["contextMenus", "tabs"]
+}

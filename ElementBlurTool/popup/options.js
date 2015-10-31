@@ -14,12 +14,25 @@ $(function () {
 		$("#checkbox").attr("checked",true);
 	}
 	
+	//动态模糊值框的赋值
+	$("#shownum").text(localStorage["BLURdynamicnum"] || 5);
+	$("#dynamicnum").val(localStorage["BLURdynamicnum"] || 5);
+	
 	//根据插件频道参数，来设置复选框
 	$("li input").each(function(){
 		console.log($(this).val());
 		if($(this).val()==selectedChannel)
 		{
 			$(this).click();
+		}
+		else
+		{
+			if(selectedChannel>5)
+			{
+				$("#shownum").text(selectedChannel);
+				$("#dynamicnum").val(selectedChannel);
+				$("#dynamicnum").click();	
+			}
 		}
 	});
 	
@@ -52,6 +65,31 @@ $(function () {
 		sendCmd("cancel");
 	});
 	
+	//增加模糊值
+	$("#plus").click(function(){
+		var num = parseInt($("#shownum").text());
+		var nextnum = num+1;
+		if(nextnum>=5 && nextnum<=20)
+		{
+			$("#shownum").text(nextnum);
+			$("#dynamicnum").val(nextnum);
+			localStorage["BLURdynamicnum"] = nextnum;
+		}	
+	});
+	
+	//减小模糊值
+	$("#minus").click(function(){
+		var num = parseInt($("#shownum").text());
+		var nextnum = num-1;
+		if(nextnum>=5 && nextnum<=20)
+		{
+			$("#shownum").text(nextnum);
+			$("#dynamicnum").val(nextnum);
+			localStorage["BLURdynamicnum"] = nextnum;
+		}
+	});
+	
+	//发送消息的方法
 	function sendCmd(str){
 		var optionmsg = str;
 				// Send a message to the active tab

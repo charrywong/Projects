@@ -77,3 +77,41 @@ article input[type=button]{min-width:60px; width:auto; height:auto; font-size:14
 .url-lists li{padding:10px; background:#efefef; border-bottom:#adadad 1px solid;}
 .url-lists li:nth-child(odd){background:#dfdfdf;}
 .url-lists a{color:#6d6d6d;}
+.arrow-right {
+width: 0;
+height: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+_border-top: 5px solid white;
+_border-bottom: 5px solid white;
+border-left: 5px solid rgb(150, 150, 168);
+overflow:hidden;
+}
+.arrow-left {
+width: 0;
+height: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+_border-top: 5px solid white;
+_border-bottom: 5px solid white;
+border-right:5px solid rgb(150, 150, 168);
+overflow:hidden;
+}
+
+.labelfloat {
+	float:left;
+	margin-top:5px;
+}
+.setnumber {
+	height:20px;
+}
+.setnumber dt {
+	  float: left;
+	  /* width: 20px; */
+	  height: 20px;
+	  padding-top: 5px;
+	  margin-left: 12px;
+}
+.setnumber dt div{
+	padding:initial;
+}

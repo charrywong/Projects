@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    <head>
+        <meta name="generator"
+        content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles/options.css" />
+        <script type="text/javascript" src="../jquery/jquery-1.7.1.js"></script>
+        <title>网页元素模糊插件</title>
+    </head>
+    <body>
+        <header>网页元素模糊插件
+        <label>
+        <input type="checkbox" id="checkbox" /> 开启</label></header>
+        <article>
+            <section>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" value="1" name="dictionary" />
+                                <em style=" -webkit-filter: blur(1px);">blur</em>1px
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" value="2" name="dictionary" />
+                                <em style=" -webkit-filter: blur(2px);">blur</em>2px
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" value="3" name="dictionary" />
+                                <em style=" -webkit-filter: blur(3px);">blur</em>3px
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" value="4" name="dictionary" />
+                                <em style=" -webkit-filter: blur(4px);">blur</em>4px
+                            </label>
+                        </li>
+						<li>
+                            <label>
+                                <input type="radio" value="5" name="dictionary" id="dynamicnum" class="labelfloat"/>
+								<dl class="setnumber">
+									<dt><div id="minus" class="arrow-left"></div></dt>
+									<dt><div style="line-height:8px;"><em id="shownum">5</em>px</div></dt>
+									<dt><div id="plus" class="arrow-right"></div></dt>
+								</dl>
+                            </label>
+                        </li>
+                    </ul>
+                    <div>
+                        <input type="button" id="cancel" class="btns" value="取消模糊" />
+                    </div>
+                </fieldset>
+            </section>
+        </article>
+        <script type="text/javascript" src="options.js"></script>
+    </body>
+</html>

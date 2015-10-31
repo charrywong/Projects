@@ -1,2 +1,3 @@
-# googleTranslate
-Google translate chrome extension. 一个简单的谷歌翻译插件
+# Projects
+Projects,include website project, chrome extension project,etc
+该目录下包含网站项目，谷歌插件等

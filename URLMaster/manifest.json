@@ -1,0 +1,33 @@
+﻿{
+	"name": "URLMaster",
+	"description": "右键解析连接码,并转跳到URL,Author:CharryWong",
+	"manifest_version": 2,
+	"version": "1.0",
+	"browser_action": {
+	"default_icon": "icons/icon16.png",
+	"default_popup" : "popup/options.html",
+    "default_title":"URLMaster"
+	},
+	"icons" : {
+        "16" : "icons/icon16.png",
+        "48" : "icons/icon48.png",
+        "128" : "icons/icon128.png"
+	},
+	"content_scripts" : [{
+			"matches" : ["http://*/*","https://*/*","file:///*/*"],
+			"js" : ["jquery/jquery-1.7.1.js", "content_scripts/cscript.js"]
+		}
+	],
+	"background": { 
+		"page":"background/background.html"
+	},
+	/**extension options page*/
+	"options_page" : "popup/options.html",	
+	"permissions": [
+		"storage",
+		"contextMenus",
+		"tabs",
+		"http://www.blogso.cn/",
+		"http://localhost:8080/"
+	]
+}

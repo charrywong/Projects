@@ -1,0 +1,45 @@
+#googlefanyitip{
+	text-align:left;
+	font-family:arial,sans-serif;
+	/* color:#000; */
+}
+.googlefanyitipcon {
+    position: absolute;
+    z-index: 1;
+    top: 22px;
+    left: -35px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(0,0,0,0.2);
+    -webkit-transition: opacity .218s;
+    transition: opacity .218s;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.2); */
+    padding: 5px 0 5px 0;
+    display: none;
+    font-size: 13px;
+    line-height: 20px;
+	font-family: arial;
+}
+.translateContent {
+    max-width: 350px;
+}
+.googlefanyisound{
+	margin-left: .2em;
+	font-size: 12px;
+	font-family: "lucida sans unicode",arial,sans-serif;
+	color: #a0a0a0;
+	font-weight: normal;
+    margin: 0 .3em;
+	line-height: 26px;
+}
+.googlefanyicixing{
+	color: #000;
+	font-family:"microsoft yahei","宋体",arial,sans-serif;
+    font-style: italic;
+	font-size: 12px;
+	font-weight: 400;
+}
+.googlefanyimeaning{
+	/* letter-spacing: 0.1em; */
+}

@@ -1,0 +1,24 @@
+﻿{
+	"name": "谷歌翻译插件",
+	"description": "右键谷歌翻译插件,Author:CharryWong",
+	"manifest_version": 2,
+	"version": "1.0",
+	"browser_action": {
+	"default_icon": "icons/icon48.png",
+    "default_title":"谷歌翻译"
+	},
+	"icons" : {
+        "16" : "icons/icon16.png",
+        "48" : "icons/icon48.png",
+        "128" : "icons/icon128.png"
+	},
+	"content_scripts": 
+	[ 
+		{
+			"js": ["jquery-1.7.1.js","my.js"],
+			"css": ["googlefanyitip.css"],
+			"matches": [ "http://*/*", "https://*/*" ]
+		} 
+	],
+	"permissions": ["contextMenus", "tabs"]
+}

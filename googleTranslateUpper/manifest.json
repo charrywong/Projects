@@ -1,10 +1,11 @@
 ﻿{
 	"name": "谷歌翻译插件",
-	"description": "右键谷歌翻译插件,Author:CharryWong",
+	"description": "在线划词翻译插件,Author:CharryWong",
 	"manifest_version": 2,
-	"version": "1.0",
+	"version": "2.0",
 	"browser_action": {
 	"default_icon": "icons/icon48.png",
+	"default_popup" : "popup/options.html",
     "default_title":"谷歌翻译"
 	},
 	"icons" : {
@@ -12,13 +13,19 @@
         "48" : "icons/icon48.png",
         "128" : "icons/icon128.png"
 	},
+	/**extension options page*/
+	"options_page" : "popup/options.html",
 	"content_scripts": 
 	[ 
 		{
-			"js": ["jquery-1.7.1.js","my.js"],
-			"css": ["googlefanyitip.css"],
+			"js": ["jquery/jquery-1.7.1.js","contentscript/my.js"],
+			"css": ["contentscript/googlefanyitip.css"],
 			"matches": [ "http://*/*", "https://*/*" ]
 		} 
 	],
-	"permissions": ["contextMenus", "tabs"]
+	/**background scripts run in extensions*/
+	"background" : {
+		"scripts" : ["background/background.js"]
+	},
+	"permissions": ["storage"]
 }

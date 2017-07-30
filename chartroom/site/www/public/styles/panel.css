@@ -1,0 +1,27 @@
+div {
+    border: solid 0px #9bced2;
+}
+#panel {
+    /*panel css*/
+    width: 600px;
+    height: 600px;
+    background: url(./images/panel.png) no-repeat 0px 0px;
+}
+.cell {
+    /*cell css*/
+    width: 200px;
+    height: 200px;
+    float: left;
+    cursor: pointer;
+}
+/*.cell:hover {*/
+    /*background: url(./images/location.png) no-repeat 75px 75px;*/
+/*}*/
+
+.black {
+    background: url(./images/black.png) no-repeat 50px 50px;
+}
+
+.white {
+    background: url(./images/white.png) no-repeat 50px 50px;
+}

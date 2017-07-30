@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <title>米字棋-在线小游戏</title>
+    <script>
+        // 获取屏幕宽度
+        var iWidth = window.innerWidth;
+        var iHeight = window.innerHeight;
+        iSize = iWidth<iHeight?iWidth:iHeight;
+        // 设置一个rem的值等于iWidth
+        document.getElementsByTagName("html")[0].style.fontSize = iSize+ "px";
+        console.log('width:',iWidth);
+        console.log('height:',iHeight);
+        console.log('rem: ',iSize);
+    </script>
+    <!--<link rel="stylesheet" href="styles/panel.css">-->
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/main.copy.css">
+    <link rel="stylesheet/less" type="text/css" href="./styles/test.less" />
+    <script src="./scripts/less-1.7.3.min.js" type="text/javascript"></script>
+    <script src="./scripts/jquery-3.2.1.min.js"></script>
+    <script src="./scripts/jquery-ui.min.js"></script>
+    <script src="./scripts/jquery.ui.touch-punch.min.js"></script>
+    <!--<script src="./scripts/angular-1.6.5.js"></script>-->
+
+</head>
+<body>
+<!--<div class="act1"></div>-->
+<div id="panel">
+    <!--line 1-->
+    <div class="cell black" No="1"></div>
+    <div class="cell black" No="2"></div>
+    <div class="cell black" No="3"></div>
+    <!--line 2-->
+    <div class="cell empty" No="4"></div>
+    <div class="cell empty" No="5"></div>
+    <div class="cell empty" No="6"></div>
+    <!--line 3-->
+    <div class="cell white" No="7"></div>
+    <div class="cell white" No="8"></div>
+    <div class="cell white" No="9"></div>
+</div>
+<div class="wrapper">
+    <div class="banner">
+        <span id="status"></span>
+    </div>
+    <div id="historyMsg">
+    </div>
+    <div class="controls" >
+        <textarea id="messageInput" placeHolder="enter to send"></textarea>
+        <input id="sendBtn" type="button" value="↵">
+    </div>
+</div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./scripts/game.js"></script>
+</body>
+</html>

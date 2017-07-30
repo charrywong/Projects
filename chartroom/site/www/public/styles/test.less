@@ -1,0 +1,33 @@
+@R1:1rem;
+div {
+  border: solid 0px #9bced2;
+}
+.act1{
+  width: 1/2*@R1;
+  height: 1/2*@R1;
+  border: solid 1px #000000;
+}
+#panel {
+  /*panel css*/
+  width: 9/10*@R1;
+  height: 9/10*@R1;
+  margin: auto;
+  background: url(./images/panel.png) no-repeat 0px 0px;
+  background-size: 9/10*@R1 9/10*@R1;
+}
+.cell {
+  /*cell css*/
+  width: 3/10*@R1;
+  height: 3/10*@R1;
+  float: left;
+}
+
+.black {
+  background: url(./images/black.png) no-repeat 45/600*@R1 45/600*@R1;
+  background-size: 9/60*@R1 9/60*@R1;
+}
+
+.white {
+  background: url(./images/white.png) no-repeat 45/600*@R1 45/600*@R1;
+  background-size: 9/60*@R1 9/60*@R1;
+}

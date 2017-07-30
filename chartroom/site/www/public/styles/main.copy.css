@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+.wrapper {
+    font-size: 14px;
+    width: 0.7rem;
+    height: 0.57rem;
+    padding: 0.01rem;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+#nickWrapper {
+    display: none;
+}
+.banner {
+    height: 0.02rem;
+    width: 100%;
+}
+.banner p {
+    float: left;
+    display: inline-block;
+}
+.controls {
+    height: 0.19rem;
+    margin: 0.02rem 0rem;
+    position: relative;
+}
+#historyMsg {
+    height: 0.32rem;
+    background-color: #fff;
+    overflow: auto;
+    padding: 2px;
+    font-size: 14px;
+}
+#historyMsg img {
+    max-width: 99%;
+}
+.timespan {
+    color: #ddd;
+}
+.items {
+    height: 0.02rem;
+}
+
+#messageInput {
+    width: 0.6rem;
+    max-width: 0.6rem;
+    height: 0.17rem;
+    max-height: 0.17rem;
+    float:left;
+}
+#sendBtn {
+    width: 0.07rem;
+    height: 0.18rem;
+    float: right;
+    font-size: 0.04rem;
+    padding: 0.01rem;
+}
+
